@@ -21,7 +21,8 @@ app.use((req, res, next) => {
 })
 
 // middleware para o uso das rotas
-app.use('/users', require('./routes/users.routes.js'));
+app.use('/users', require('./routes/users.route.js'));
+app.use('/lodgings', require('./routes/lodgings.route.js'));
 
 // middleware de erro
 app.use((err, req, res, next) => {
